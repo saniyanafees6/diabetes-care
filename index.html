@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="./lib/css/styles.css">
+  <script type="text/javascript" src="./lib/js/canvasjs.min.js"></script>
+</head>
+
+<body>
+
+  <div class="grid-container">
+    <header class="header">
+      <div>
+        Patient Name:
+        <span class="banner-value" id="patient_name">..</span>
+        Gender:
+        <span class="banner-value" id="gender">..</span>
+        DOB:
+        <span class="banner-value" id="dob">..</span>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main-overview">
+        <div class = "card">
+          <div>Height</div>
+          <div class="ob-value" id="height">undefined</div>
+        </div>
+          <div class = "card">
+            <div>Weight</div>
+            <div class="ob-value" id="weight">undefined</div>
+          </div>
+          <div class="card">
+            <div>Systolic Blood Pressure</div>
+            <div class="ob-value" id="sys">undefined</div>
+          </div>
+          <div class="card">
+            <div>Diastolic Blood Pressure</div>
+            <div class="ob-value" id="dia">undefined</div>
+          </div>
+        <div class="card">
+          <div>Glucose</div>
+          <div class="ob-value" id="glucose">undefined</div>
+        </div>
+        <div class="card">
+          <div>Total Cholesterol</div>
+          <div class="ob-value" id="cholestrol">undefined</div>
+        </div>
+        <div class="card">
+          <div>HDL</div>
+          <div class="ob-value" id="hdl">undefined</div>
+        </div>
+        <div class="card">
+          <div>LDL</div>
+          <div class="ob-value" id="ldl">undefined</div>
+        </div>
+        <div class="card">
+          <div>Microalbumin</div>
+          <div class="ob-value" id="microalbumin">undefined</div>
+        </div>
+        <div class="card">
+          <div>Ketones</div>
+          <div class="ob-value" id="ketones">undefined</div>
+        </div>
+        <div class="card">
+          <div>Hemoglobin</div>
+          <div class="ob-value" id="hemoglobin">undefined</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="title">
+          Medication Requests
+        </div>
+        <ul id="med_list"></ul>
+      </div>
+
+
+
+
+      </main>
+    </div>
+
+    <script src='./lib/js/fhir-client.js'></script>
+    <script src="./lib/js/get-data.js"></script>
+
+    <script type="text/javascript">
+
+      /*window.onload = function () {
+  //  function renderChart(){
+        var chart = new CanvasJS.Chart("a1cChart", {
+          title:{
+            text: "My First Chart in CanvasJS"
+          },
+          data: [
+            {
+              // Change type to "doughnut", "line", "splineArea", etc.
+              type: "column",
+              dataPoints: [
+                { label: "apple",  y: 10  },
+                { label: "orange", y: 15  },
+                { label: "banana", y: 25  },
+                { label: "mango",  y: 30  },
+                { label: "grape",  y: 28  }
+              ]
+            }
+          ]
+        });
+        chart.render();
+  //}
+      }*/
+
+    </script>
+
+    <!-- uncomment below script and comment above script to switch for easy local testing -->
+  <!-- <script src="./lib/js/get-data-test.js"></script>-->
+</body>
+
+</html>
